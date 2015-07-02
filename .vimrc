@@ -1,6 +1,6 @@
 set nocompatible
 syntax on
-colorscheme desert
+colorscheme molokai
 set autoindent
 set smartindent
 set tabstop=2
@@ -18,6 +18,19 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
+
+"Color Scheme
+NeoBundle 'vim-scripts/twilight'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'chriskempson/tomorrow-theme'
+NeoBundle 'vyshane/vydark-vim-color'
+NeoBundle 'vim-scripts/github-theme'
+NeoBundle 'vim-scripts/tango.vim'
+NeoBundle 'vim-scripts/vylight'
+NeoBundle 'tomasr/molokai'
+
 call neobundle#end()
 
 filetype plugin on

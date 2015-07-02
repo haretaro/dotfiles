@@ -1,6 +1,5 @@
 set nocompatible
 syntax on
-colorscheme molokai
 set autoindent
 set smartindent
 set tabstop=2
@@ -35,6 +34,9 @@ call neobundle#end()
 
 filetype plugin on
 filetype indent on
+
+colorscheme lucius
+set background=dark
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

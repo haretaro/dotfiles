@@ -2,9 +2,9 @@ set nocompatible
 syntax on
 set autoindent
 set smartindent
-set tabstop=2
+set tabstop=4
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set clipboard+=unnamed
 set backspace=indent,eol,start
 

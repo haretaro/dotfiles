@@ -35,13 +35,11 @@ NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
-let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
-
 filetype plugin on
 filetype indent on
 
 colorscheme lucius
-set background=light
+set background=dark
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

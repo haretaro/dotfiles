@@ -2,9 +2,9 @@ set nocompatible
 syntax on
 set autoindent
 set smartindent
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set clipboard+=unnamed
 set backspace=indent,eol,start
 
@@ -16,9 +16,6 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'ujihisa/unite-colorscheme'
 
 "Color Scheme
 NeoBundle 'vim-scripts/twilight'
@@ -30,13 +27,21 @@ NeoBundle 'vim-scripts/tango.vim'
 NeoBundle 'vim-scripts/vylight'
 NeoBundle 'tomasr/molokai'
 
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'vim-scripts/brainfuck-syntax'
+NeoBundle 'scrooloose/syntastic'
+
 call neobundle#end()
+
+let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
 
 filetype plugin on
 filetype indent on
 
 colorscheme lucius
-set background=dark
+set background=light
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

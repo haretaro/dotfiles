@@ -35,11 +35,18 @@ NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
+let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
+
 filetype plugin on
 filetype indent on
 
 colorscheme lucius
-set background=dark
+set background=light
+
+let $BASH_ENV=expand('~/.bashenv')
+
+set encoding=utf-8
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

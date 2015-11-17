@@ -46,7 +46,7 @@ set background=light
 let $BASH_ENV=expand('~/.bashenv')
 
 set encoding=utf-8
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

@@ -8,6 +8,9 @@ set shiftwidth=2
 set clipboard+=unnamed
 set backspace=indent,eol,start
 
+set background=dark
+colorscheme murphy
+
 filetype off
 
 if has('vim_starting')
@@ -39,9 +42,6 @@ let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
 
 filetype plugin on
 filetype indent on
-
-colorscheme lucius
-set background=light
 
 let $BASH_ENV=expand('~/.bashenv')
 

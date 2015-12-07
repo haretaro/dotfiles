@@ -7,14 +7,17 @@ set expandtab
 set shiftwidth=2
 set clipboard+=unnamed
 set backspace=indent,eol,start
-
-set background=dark
-colorscheme murphy
+set number
+set ruler
+set hlsearch
+set showcmd
+set listchars=tab:>.,eol:\ ,trail:-
+set list
 
 filetype off
 
 if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -37,6 +40,9 @@ NeoBundle 'vim-scripts/brainfuck-syntax'
 NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
+
+set background=light
+colorscheme molokai
 
 let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
 

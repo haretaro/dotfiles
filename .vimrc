@@ -11,8 +11,9 @@ set number
 set ruler
 set hlsearch
 set showcmd
-set listchars=tab:>.,eol:\ ,trail:-
+set listchars=tab:>.,eol:\ ,trail:_
 set list
+set cursorline
 
 filetype off
 

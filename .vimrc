@@ -15,6 +15,12 @@ set listchars=tab:>.,eol:\ ,trail:_
 set list
 set cursorline
 
+"カッコ補完
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+
 filetype off
 
 if has('vim_starting')

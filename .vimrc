@@ -51,7 +51,14 @@ call neobundle#end()
 set background=light
 colorscheme molokai
 
+"syntasticの設定
 let g:syntastic_brainfuck_checker = 'brainfuck-syntax'
+"activeに設定で常に構文チェック
+"ただしscalaは構文チェックに時間がかかるのでpassiveに指定
+"構文チェックする場合は:SyntasticCheck
+let g:syntastic_mode_map = { "mode": "active",
+      \"active_filetypes": [],
+      \"passive_filetypes": ["scala"]}
 
 filetype plugin on
 filetype indent on

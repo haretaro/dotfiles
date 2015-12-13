@@ -14,6 +14,7 @@ set showcmd
 set listchars=tab:>.,eol:\ ,trail:_
 set list
 set cursorline
+set visualbell
 
 "カッコ補完
 inoremap {<Enter> {}<Left><CR><ESC><S-o>

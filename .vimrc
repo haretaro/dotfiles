@@ -47,7 +47,11 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'vim-scripts/brainfuck-syntax'
 NeoBundle 'scrooloose/syntastic'
+
+"シェル
 NeoBundle 'Shougo/vimshell'
+
+"非同期処理ライブラリvimshellに必要
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
   \   'windows' : 'make -f make_mingw32.mak',

@@ -31,7 +31,7 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"Color Scheme
+"NeoBundle Color Scheme
 NeoBundle 'vim-scripts/twilight'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'chriskempson/tomorrow-theme'
@@ -41,11 +41,21 @@ NeoBundle 'vim-scripts/tango.vim'
 NeoBundle 'vim-scripts/vylight'
 NeoBundle 'tomasr/molokai'
 
+"NeoBundle Plugin
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'vim-scripts/brainfuck-syntax'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+  \   'windows' : 'make -f make_mingw32.mak',
+  \   'cygwin' : 'make -f make_cygwin.mak',
+  \   'mac' : 'make -f make_mac.mak',
+  \   'unix' : 'make -f make_unix.mak',
+  \ },
+  \}
 
 call neobundle#end()
 

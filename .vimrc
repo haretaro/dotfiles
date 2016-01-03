@@ -16,6 +16,17 @@ set list
 set cursorline
 set visualbell
 
+let mapleader = "\<Space>"
+
+"VimShell起動
+nnoremap <Leader>s :VimShell<cr>
+
+"新しいタブ
+nnoremap <Leader>t :tabnew<cr>
+
+"タブ移動
+nnoremap <C-Tab> gt
+
 "カッコ補完
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>

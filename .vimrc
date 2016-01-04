@@ -26,6 +26,7 @@ nnoremap <Leader>t :tabnew<cr>
 
 "タブ移動
 nnoremap <C-Tab> gt
+nnoremap <Leader><Tab> gt
 
 "カッコ補完
 inoremap {<Enter> {}<Left><CR><ESC><S-o>

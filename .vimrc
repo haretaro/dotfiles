@@ -33,6 +33,8 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+"colorschemeプレビュー
+nnoremap <Leader>c :Unite<Space>-auto-preview<Space>colorscheme<cr>
 
 filetype off
 
@@ -75,8 +77,14 @@ NeoBundle 'Shougo/vimproc', {
 
 call neobundle#end()
 
-set background=light
-colorscheme molokai
+if has('unix')
+  colorscheme murphy
+endif
+
+if has('mac')
+  set background=light
+  colorscheme molokai
+endif
 
 "syntasticの設定
 let g:syntastic_brainfuck_checker = 'brainfuck-syntax'

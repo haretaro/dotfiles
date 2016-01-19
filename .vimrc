@@ -15,6 +15,8 @@ set listchars=tab:>.,eol:\ ,trail:_
 set list
 set cursorline
 set visualbell
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 let mapleader = "\<Space>"
 
@@ -100,14 +102,10 @@ filetype indent on
 
 let $BASH_ENV=expand('~/.bashenv')
 
-set encoding=utf-8
-
 "html インデント設定
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 let g:html_indent_inctags = "html,body,head"
-
-set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.

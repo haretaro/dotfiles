@@ -5,7 +5,6 @@ set smartindent
 set tabstop=2
 set expandtab
 set shiftwidth=2
-set clipboard^=unnamedplus
 set backspace=indent,eol,start
 set number
 set ruler
@@ -17,6 +16,14 @@ set cursorline
 set visualbell
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
+
+if has('unix')
+  set clipboard^=unnamedplus
+endif
+
+if has('mac')
+  set clipboard=unnamed
+endif
 
 let mapleader = "\<Space>"
 

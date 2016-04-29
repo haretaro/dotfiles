@@ -70,6 +70,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'vim-scripts/brainfuck-syntax'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'mattn/emmet-vim'
 
 "シェル
 NeoBundle 'Shougo/vimshell'

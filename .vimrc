@@ -117,4 +117,3 @@ let g:html_indent_inctags = "html,body,head"
 "If there are uninstalled bundles found on startup,
 "this will conveniently prompt you to install them.
 NeoBundleCheck
-EDITOR=vim

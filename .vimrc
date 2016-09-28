@@ -88,7 +88,7 @@ NeoBundle 'Shougo/vimproc', {
 call neobundle#end()
 
 if has('unix')
-  colorscheme elflord
+  colorscheme molokai
 endif
 
 if has('mac')

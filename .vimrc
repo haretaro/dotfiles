@@ -15,7 +15,7 @@ set list
 set cursorline
 set visualbell
 set encoding=utf-8
-set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp,utf-16le
 
 if has('unix')
   set clipboard^=unnamedplus

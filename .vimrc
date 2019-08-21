@@ -36,7 +36,7 @@ inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 if has('unix')
-  colorscheme desert
+  colorscheme molokai
   set clipboard^=unnamedplus
 endif
 

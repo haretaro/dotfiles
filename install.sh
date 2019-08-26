@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [[ `uname` == "Darwin" ]]; then  # Mac のとき
+    brew install bash-completion
+fi
+
 # setup vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

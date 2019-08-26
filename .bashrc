@@ -3,6 +3,9 @@ if [[ `uname` == "Linux" ]]; then
 elif [[ `uname` == "Darwin" ]]; then
     # Mac のとき
     alias ls='ls -FG'
+
+    # bash-completion
+    [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 fi
 
 alias python='python3'

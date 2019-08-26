@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[`uname` == "Darwin" ]]; then  # Mac のとき
+if [[ `uname` == "Darwin" ]]; then  # Mac のとき
     brew install bash-completion
 fi
 

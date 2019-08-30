@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai'
+Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
 set nocompatible

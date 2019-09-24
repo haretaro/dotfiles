@@ -14,5 +14,4 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 
 # link
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.vimrc ~/.vimrc

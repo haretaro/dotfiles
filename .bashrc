@@ -8,13 +8,16 @@ elif [[ `uname` == "Darwin" ]]; then
     [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 fi
 
-alias python='python3'
-
 source ~/dotfiles/git-prompt.sh
 source ~/dotfiles/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
 export EDITOR='vim'
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # .ssh/config の Host に ping する
 # https://superuser.com/questions/429470/is-there-a-utility-to-ping-a-server-using-aliases-in-ssh-config-instead-of-etc

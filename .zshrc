@@ -9,7 +9,9 @@ elif [[ `uname` == "Darwin" ]]; then
 fi
 
 source ~/dotfiles/git-prompt.sh
-source ~/dotfiles/git-completion.zsh
+fpath=(~/.zsh $fpath)
+autoload -U compinit
+compinit -u
 GIT_PS1_SHOWDIRTYSTATE=true
 setopt PROMPT_SUBST
 PROMPT='%F{green}%n@%m%f %F{blue}%~%f %F{red}$(__git_ps1 " (%s)")%f

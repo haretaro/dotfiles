@@ -10,6 +10,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # download git-prompt
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 
 # pyenv

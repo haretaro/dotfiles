@@ -9,9 +9,10 @@ elif [[ `uname` == "Darwin" ]]; then
 fi
 
 source ~/dotfiles/git-prompt.sh
-source ~/dotfiles/git-completion.bash
+source ~/dotfiles/git-completion.zsh
 GIT_PS1_SHOWDIRTYSTATE=true
-PROMPT='%F{green}%n@%m%f %F{blue}%~%f
+setopt PROMPT_SUBST
+PROMPT='%F{green}%n@%m%f %F{blue}%~%f %F{red}$(__git_ps1 " (%s)")%f
 $ '
 export EDITOR='vim'
 

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [[ `uname` == "Darwin" ]]; then  # Mac のとき
-    brew install bash-completion
+    brew install zsh-completion
 fi
 
 # setup vim-plug

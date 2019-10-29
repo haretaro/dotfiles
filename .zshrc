@@ -4,8 +4,8 @@ elif [[ `uname` == "Darwin" ]]; then
     # Mac のとき
     alias ls='ls -FG'
 
-    # bash-completion
-    [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+    # zsh-completion
+    fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
 source ~/dotfiles/git-prompt.sh

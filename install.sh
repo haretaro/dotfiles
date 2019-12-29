@@ -19,6 +19,12 @@ cp git-completion.bash ~/.zsh
 # pyenv
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
+# nodebrew
+brew install nodebrew
+mkdir -p ~/.nodebrew.src
+nodebrew install-binary stable
+nodebrew use stable
+
 # link
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc

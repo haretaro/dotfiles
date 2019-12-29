@@ -6,6 +6,9 @@ elif [[ `uname` == "Darwin" ]]; then
 
     # zsh-completion
     fpath=(/usr/local/share/zsh-completions $fpath)
+
+    # nodebrew
+    export PATH=$HOME/.nodebrew/current/bin:$PATH
 fi
 
 source ~/dotfiles/git-prompt.sh

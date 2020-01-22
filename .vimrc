@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomasr/molokai'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
+Plug 'cespare/vim-toml'
 call plug#end()
 
 set nocompatible

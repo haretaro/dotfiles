@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tomasr/molokai'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'cespare/vim-toml'
 Plug 'davidhalter/jedi-vim'
+Plug 'tomasr/molokai'
 call plug#end()
 
 set nocompatible

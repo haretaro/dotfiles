@@ -13,7 +13,7 @@ fi
 
 source ~/dotfiles/git-prompt.sh
 fpath=(~/.zsh $fpath)
-autoload -U compinit
+autoload -Uz compinit
 compinit -u
 GIT_PS1_SHOWDIRTYSTATE=true
 setopt PROMPT_SUBST
